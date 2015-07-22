@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Index</a></li>
+            <li><a href="{{ url_for('form') }}">Form</a></li>
+            <li><a href="{{ url_for('pic') }}">Picture</a></li>
+        </ul>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer></footer>
+</body>
+</html>
