@@ -13,7 +13,9 @@ Multiple module can be found [here](https://github.com/ctnx/python-flask-multipl
 Clone using git:
 
 ``` git clone https://github.com/ctnx/python-flask-single flask ```
+
 ``` cd flask ```
+
 ``` git remote remove origin ```
 
 ## Requirements:
